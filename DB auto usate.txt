@@ -1,0 +1,25 @@
+# database auto usate
+
+Caratteristica    |     type    |     attributi     |   type data      |   commento
+---------------------------------------------------------------------------------------------
+Id                |  number     |     Primary Key   |   mediumInt      |   Codice identificativo
+
+Marca             |  string     |     Not null      |   varchar(50))   |   Nome marca autobilistica
+Modello           |  string     |     Not null      |   varchar(50)    |   Nome modello auto
+Colore            |  string     |     Not null      |   varchar(6)     |   Colore esadecimale codice
+Posti             |  int        |     default(5)    |   tinyInt        |   Numero posti auto
+
+Altezza           |  float      |     Null          |   float(1, 2)    |   Altezza auto
+Largezza          |  float      |     Null          |   float(1, 2)    |   Larghezza auto
+Lunghezza         |  float      |     Null          |   float(1, 2)    |   Lunghezza auto
+Peso              |  float      |     Null          |   small          |   Peso auto complessivo
+
+Potenza           |  int        |     Not null      |   float(5, 2)    |   Potenza motore
+Cilindrata        |  int        |     Not null      |   float(5, 1)    |   Potenza di clilindrata
+Trazione4ruote    |  bool       |     Null          |   TINYINT(1)     |   Trazione motore 2 o 4 rote
+CambioAutomatico  |  bool       |     Not null      |   TINYINT(1)     |   Cambio automatico o manuale
+Emissioni         |  float      |     Null          |   float(1, 2)    |   Emissioni per km motore
+
+Prezzo            |  int        |     Null          |   small(6)       |   Prezzo 
+Tipologia         |  string     |     Not null      |   varchar(30)    |   Elettrica, benzina, ibrida, ...
+Descrizione       |  string     |     default('nd') |   text           |   Descrizione auto
